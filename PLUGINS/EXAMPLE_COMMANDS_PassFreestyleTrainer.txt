@@ -1,0 +1,257 @@
+# Pass & Freestyle Trainer - Example Commands & Configuration
+# Copy these commands and paste into your console to get started
+
+# ===================================
+# BASIC SETUP
+# ===================================
+
+# Enable the plugin
+pft enable
+
+# Set training mode (choose one)
+pft mode pass_trainer        # For passing practice
+# pft mode aerial_control    # For air control
+# pft mode flip_reset        # For flip resets
+# pft mode air_dribble       # For air dribbles
+# pft mode ceiling_shot      # For ceiling shots
+# pft mode recovery          # For landing practice
+
+# Set difficulty (choose one)
+pft difficulty beginner      # Easiest, 1.0x points
+# pft difficulty intermediate  # Medium, 1.5x points
+# pft difficulty advanced      # Hard, 2.0x points
+# pft difficulty pro           # Hardest, 2.5x points
+
+
+# ===================================
+# TRAINING SESSION COMMANDS
+# ===================================
+
+# Check your current stats
+pft stats
+
+# Reset stats (start fresh)
+pft reset
+
+# Spawn training scenarios (future feature)
+pft spawn_pass
+pft spawn_freestyle
+
+
+# ===================================
+# TRAINING PRESETS
+# ===================================
+
+# Preset 1: Passing Beginner
+pft enable
+pft mode pass_trainer
+pft difficulty beginner
+pft reset
+
+# Preset 2: Aerial Control Intermediate  
+pft enable
+pft mode aerial_control
+pft difficulty intermediate
+pft reset
+
+# Preset 3: Freestyle Advanced
+pft enable
+pft mode flip_reset
+pft difficulty advanced
+pft reset
+
+# Preset 4: Air Dribble Practice
+pft enable
+pft mode air_dribble
+pft difficulty intermediate
+pft reset
+
+# Preset 5: Ceiling Shot Master
+pft enable
+pft mode ceiling_shot
+pft difficulty advanced
+pft reset
+
+
+# ===================================
+# DAILY TRAINING ROUTINES
+# ===================================
+
+# Monday: Passing Focus
+pft enable
+pft mode pass_trainer
+pft difficulty beginner
+pft reset
+# Train for 30 minutes
+# pft stats (check progress)
+
+# Tuesday: Air Control
+pft enable
+pft mode aerial_control
+pft difficulty intermediate
+pft reset
+# Train for 30 minutes
+# pft stats
+
+# Wednesday: Advanced Mechanics
+pft enable
+pft mode flip_reset
+pft difficulty intermediate
+pft reset
+# Train for 30 minutes
+# pft stats
+
+# Thursday: Air Dribbles
+pft enable
+pft mode air_dribble
+pft difficulty intermediate
+pft reset
+# Train for 30 minutes
+# pft stats
+
+# Friday: Ceiling Shots
+pft enable
+pft mode ceiling_shot
+pft difficulty advanced
+pft reset
+# Train for 30 minutes
+# pft stats
+
+# Weekend: Mixed Practice
+# Rotate through all modes at your current skill level
+
+
+# ===================================
+# PROGRESSION TRACKING
+# ===================================
+
+# Week 1 Goals (Beginner):
+# - 50+ successful passes
+# - 10+ minutes air time
+# - 200+ total score
+
+# Week 2 Goals (Intermediate):
+# - 100+ successful passes
+# - 20+ minutes air time
+# - 500+ total score
+# - 5+ flip reset opportunities
+
+# Week 3 Goals (Advanced):
+# - 150+ successful passes
+# - 30+ minutes air time
+# - 1000+ total score
+# - 10+ flip resets
+# - 5+ ceiling touches
+
+# Week 4 Goals (Pro):
+# - 200+ successful passes
+# - 40+ minutes air time
+# - 2000+ total score
+# - 20+ flip resets
+# - 10+ ceiling touches
+# - 90%+ pass accuracy
+
+
+# ===================================
+# TIPS & TRICKS
+# ===================================
+
+# Tip 1: Always check stats after each session
+# pft stats
+
+# Tip 2: Reset stats before each new session for accurate tracking
+# pft reset
+
+# Tip 3: Gradually increase difficulty
+# Start beginner → intermediate → advanced → pro
+
+# Tip 4: Focus on one mode per day
+# Don't switch modes mid-session for best results
+
+# Tip 5: Track improvement over time
+# Write down your stats weekly to see progress
+
+# Tip 6: Use appropriate difficulty
+# If accuracy drops below 50%, lower difficulty
+
+# Tip 7: Take breaks
+# 30-45 minute sessions work best
+
+
+# ===================================
+# TROUBLESHOOTING
+# ===================================
+
+# Plugin not working?
+# 1. Check if enabled: pft enable
+# 2. Verify mode is set: pft mode pass_trainer
+# 3. Check difficulty: pft difficulty beginner
+# 4. Look for error messages in console
+
+# Not getting points?
+# 1. Ensure you're meeting mode requirements
+# 2. Check pass speed (must be 500+)
+# 3. Verify you're airborne for aerial modes
+# 4. Make sure plugin is enabled
+
+# Commands not recognized?
+# 1. Check spelling (case doesn't matter)
+# 2. Ensure plugin loaded successfully
+# 3. Look for startup message in console
+# 4. Restart bot if needed
+
+
+# ===================================
+# CUSTOMIZATION
+# ===================================
+
+# To customize the plugin, edit these values in the .py file:
+
+# Update rate (lines ~120-121):
+# self.update_interval = 1.0 / 30.0  # Change 30 to adjust Hz
+
+# Difficulty multipliers (lines ~134-139):
+# "beginner": 1.0,     # Change multiplier
+# "intermediate": 1.5,
+# "advanced": 2.0,
+# "pro": 2.5
+
+# Pass speed threshold (line ~250):
+# if ball_speed > 500:  # Change minimum pass speed
+
+# Flip reset distance (line ~304):
+# if distance < 150:  # Change detection range
+
+# Air dribble distance (line ~333):
+# if distance < 200:  # Change proximity requirement
+
+
+# ===================================
+# ADVANCED USAGE
+# ===================================
+
+# Combine with other plugins:
+# 1. Use alongside bot for assisted training
+# 2. Track progress while bot plays
+# 3. Learn from bot's techniques
+
+# Create custom challenges:
+# - Try to beat your high score
+# - Aim for 100% pass accuracy
+# - Set air time records
+# - Master each difficulty level
+
+# Share your stats:
+# - Screenshot your pft stats output
+# - Compare with friends
+# - Set community challenges
+
+# ===================================
+# END OF CONFIGURATION FILE
+# ===================================
+
+# For more information, see:
+# - README_PassFreestyleTrainer.md (Full documentation)
+# - QUICKSTART_PassFreestyleTrainer.md (Quick guide)
+
+# Happy Training! 🚀
